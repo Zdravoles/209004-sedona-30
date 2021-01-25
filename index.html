@@ -1,12 +1,130 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
+<head>
+	<meta charset="utf-8">
+	<title>HTML Academy: Седона</title>
+</head>
+<body>
+<header>
+	<nav>
+		<!--<ul>
+			<li><a href="">Информация</a></li>
+			<li><a href="">Фото и видео</a></li>
+			<li><a href=""><img src="" alt="Логотип Седона"></a></li>
+			<li><a href="">Карта штата</a></li>
+			<li><a href="catalog.html">Гостиницы</a></li>
+		</ul>-->
+		<div>
+			<a href="">Информация</a>
+			<a href="">Фото и видео</a>
+		</div>
+		<div>
+			<a href=""><img src="https://via.placeholder.com/138x70" alt="Логотип Седона"></a>
+		</div>
+		<div>
+			<a href="">Карта штата</a>
+			<a href="catalog.html">Гостиницы</a>
+		</div>
+	</nav>
+</header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+<main>
+	<section>
+		<img src="https://via.placeholder.com/1200x509" alt="Седона Горы">
+		<p>Седона - небольшой городок в Аризоне,<br>заслуживающий большего!</p>
+		<p>Рассмотрим 5 причин, по которым седона круче, чем Гранд Каньон!</p>
+	</section>
+	
+	<section>
+		<div>
+			<p>Настоящий<br>городок</p>
+			<p>- №1 -</p>
+			<p>Седона не аттракцион для туристов, там<br>течёт своя жизнь</p>
+		</div>
+		<img src="https://via.placeholder.com/800x256" alt="размытое фото">
+	</section>
 
-  </body>
+	<section>
+		<div>
+			<img src="https://via.placeholder.com/75x72" alt="иконка домика">
+			<p>Жильё</p>
+			<p>Рекомендуем пожить в настоящем<br>мотеле, всё как в кино!</p>
+		</div>
+		<div>
+			<img src="https://via.placeholder.com/75x72" alt="иконка гамбургера">
+			<p>Еда</p>
+			<p>Всегда заказывайте фирменный бургер,<br>вы не разочаруетесь!</p>
+		</div>
+		<div>
+			<img src="https://via.placeholder.com/75x72" alt="иконка сувениры">
+			<p>Сувениры</p>
+			<p>не только китайского, но и местного<br>производства!</p>
+		</div>
+	</section>
+
+	<section>
+		<img src="https://via.placeholder.com/800x256" alt="фото моста дьявола">
+		<div>
+			<p>Там есть<br>Мост Дьявола</p>
+			<p>- №2 -</p>
+			<p>Да, по нему можно пройти! Если конечно<br>вы осмелитесь</p>
+		</div>
+	</section>
+
+	<section>
+		<div>
+			<p>Небольшая<br>площадь</p>
+			<p>- №3 -</p>
+			<p>Все достопримечательности<br>находятся очень близко</p>
+		</div>
+		<div>
+			<p>Красивая<br>дорога</p>
+			<p>- №4 -</p>
+			<p>Ехать в Седону из Лас-Вегаса совсем<br>не скучно!</p>
+		</div>
+		<div>
+			<p>Мало<br>туристов</p>
+			<p>- №5 -</p>
+			<p>Большинство едет в Гранд Каньон<br>и толпится там</p>
+		</div>
+	</section>
+
+	<section>
+		<p>Заинтересовались?</p>
+		<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+		<button name="btnFormShow">Поиск гостиницы в Седоне</button>
+
+		<form action="https://echo.htmlacademy.ru" method="post">
+			<label>Дата заезда:
+				<input type="text" name="dateIn" value="24 апреля 2017">
+				<button name="btnSelectDateIn"><img src="https://via.placeholder.com/21x23" alt="выбрать дату заезда"></button>
+			</label>
+			<label>Дата выезда:
+				<input type="text" name="dateOut" value="4 июля 2017">
+				<button name="btnSelectDateOut"><img src="https://via.placeholder.com/21x23" alt="выбрать дату выезда"></button>
+			</label>
+			<label>Взрослые:<input type="number" name="countAdults" value="2"></label>
+			<label>Дети:<input type="number" name="countChildren" value="0"></label>
+			<!--<button type="submit" name="btnSearch">Поиск</button>-->
+			<input type="submit" name="btnSearch" value="Поиск">
+		</form>
+		<img src="https://via.placeholder.com/1199x594" alt="карта местности Седона">
+	</section>
+</main>
+
+<footer>
+	<div>
+		<span>#vizitsedona</span>
+		<a href="tel:+74956660166">тел: +7(495) 666-01-66</a>
+	</div>
+	<div>
+		<a href=""><img src="https://via.placeholder.com/17x17" alt="иконка twitter"></a>
+		<a href=""><img src="https://via.placeholder.com/17x17" alt="иконка facebook"></a>
+		<a href=""><img src="https://via.placeholder.com/17x17" alt="иконка youtube"></a>
+	</div>
+	<div>
+		<a href="https://htmlacademy.ru/intensive/htmlcss">Website by <img src="https://via.placeholder.com/115x41" alt="логотип HTML Academy"></a>
+	</div>
+</footer>
+</body>
 </html>
