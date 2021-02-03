@@ -38,15 +38,15 @@
 		<img src="https://via.placeholder.com/800x256" alt="размытое фото">
 
 		<div>
-			<h3>Жильё</h3>
+			<p>Жильё</p>
 			<p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
 		</div>
 		<div>
-			<h3>Еда</h3>
+			<p>Еда</p>
 			<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 		</div>
 		<div>
-			<h3>Сувениры</h3>
+			<p>Сувениры</p>
 			<p>не только китайского, но и местного производства!</p>
 		</div>
 
@@ -80,18 +80,18 @@
 		<a href="">Поиск гостиницы в Седоне</a>
 
 		<form action="https://echo.htmlacademy.ru" method="post">
-			<label for="dateIn">Дата заезда:</label>
-			<div>
-				<input type="text" id="dateIn" name="dateIn" value="24 апреля 2017">
-				<button name="btnSelectDateIn"><img src="https://via.placeholder.com/21x23" alt="выбрать дату заезда"></button>
-			</div>
-			<label for="dateOut">Дата выезда:</label>
-			<div>
-				<input type="text" id="dateOut" name="dateOut" value="4 июля 2017">
-				<button name="btnSelectDateOut"><img src="https://via.placeholder.com/21x23" alt="выбрать дату выезда"></button>
-			</div>
-			<label>Взрослые:<input type="number" name="countAdults" value="2"></label>
-			<label>Дети:<input type="number" name="countChildren" value="0"></label>
+			<p>
+				<label for="dateIn">Дата заезда:</label>
+				<input type="date" id="dateIn" name="dateIn" value="">
+			</p>
+			<p>
+				<label for="dateOut">Дата выезда:</label>
+				<input type="date" id="dateOut" name="dateOut" value="">
+			</p>
+			<p>
+				<label>Взрослые:<input type="number" name="countAdults" value="2"></label>
+				<label>Дети:<input type="number" name="countChildren" value="0"></label>
+			</p>
 			<button type="submit" name="btnSearch">Поиск</button>
 		</form>
 	</section>
