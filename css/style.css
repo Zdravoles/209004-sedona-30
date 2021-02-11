@@ -116,10 +116,10 @@
 	font-family: "PT Sans Bold", Arial, sans-serif;
 	text-decoration: none;
 }
-.search-link:hover {
+.search-link:hover, .link-order:hover {
 	background-color: var(--link-hover);
 }
-.search-link:active {
+.search-link:active, .link-order:active {
 	background-color: var(--link-active);
 }
 .button {
@@ -130,10 +130,10 @@
 	font-family: "PT Sans Bold", Arial, sans-serif;
 	background-color: var(--basic-blue);
 }
-.button:hover {
+.button:hover, .link-more:hover {
 	background-color: var(--button-hover);
 }
-.button:active {
+.button:active, .link-more:active {
 	background-color: var(--button-active);
 }
 .footer-contacts {
@@ -145,7 +145,87 @@
 .social-button {
 	color: var(--basic-white);
 	background-color: var(--basic-blue);
+	width: 46px;
+	height: 48px;
 }
 .footer-copyright {
 	line-height: 26px;
+}
+
+.filter-form {
+	background-color: #6691bb;
+	background: url('../img/filter-background.jpg');
+	color: var(--basic-white);
+}
+
+.filter-form legend {
+	font-size: 16px;
+	line-height: 21px;
+	font-weight: bold;
+	font-family: "PT Sans Bold", Arial, sans-serif;
+}
+.filter-form label {
+	font-size: 14px;
+	line-height: 21px;
+}
+.filter-form button {
+	font-size: 14px;
+	line-height: 21px;
+	border: 2px solid var(--basic-white);
+	background-color: transparent;
+	color: var(--basic-white);
+}
+.find-count {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+	font-family: "PT Sans Bold", Arial, sans-serif;
+}
+.sort-title {
+	font-size: 12px;
+	line-height: 18px;
+}
+.sort-list {
+	list-style: none;
+}
+.sort-list a {
+	font-size: 12px;
+	line-height: 18px;
+	color: var(--basic-black);
+	opacity: 0.3;
+	text-decoration: none;
+	border-bottom: 1px dashed #81B3D2;
+}
+.sort-active a {
+	opacity: 1;
+	color: var(--basic-blue);
+	border-bottom: none;
+}
+.result-list {
+	list-style: none;
+}
+.result-list .item-title {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+	font-family: "PT Sans Bold", Arial, sans-serif;
+}
+.result-list a {
+	color: var(--basic-white);
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: bold;
+	font-family: "PT Sans Bold", Arial, sans-serif;
+	padding: 5px 15px;
+	text-align: center;
+	text-decoration: none;
+}
+.link-more {
+	background-color: var(--basic-blue);
+}
+.link-order {
+	background-color: var(--link);
+}
+.rating {
+	background-color: var(--form-field);
 }
