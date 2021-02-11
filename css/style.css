@@ -94,6 +94,7 @@
 }
 .order h2 {
 	font-size: 30px;
+	line-height: 24px;
 	font-weight: bold;
 	font-family: "PT Sans Bold", Arial, sans-serif;
 }
@@ -110,11 +111,16 @@
 	background-color: var(--form-field-focus);
 }
 .search-link {
+	font-size: 21px;
+	line-height: 26px;
 	background-color: var(--link);
 	color: var(--basic-white);
 	font-weight: bold;
 	font-family: "PT Sans Bold", Arial, sans-serif;
 	text-decoration: none;
+	padding: 30px 125px;
+	text-align: center;
+	display: block;
 }
 .search-link:hover, .link-order:hover {
 	background-color: var(--link-hover);
@@ -129,6 +135,9 @@
 	font-weight: bold;
 	font-family: "PT Sans Bold", Arial, sans-serif;
 	background-color: var(--basic-blue);
+	border: none;
+	padding: 16px 180px;
+	text-transform: uppercase;
 }
 .button:hover, .link-more:hover {
 	background-color: var(--button-hover);
@@ -142,14 +151,20 @@
 	font-weight: bold;
 	font-family: "PT Sans Bold", Arial, sans-serif;
 }
+.footer-phone {
+	color: var(--basic-black);
+	text-decoration: none;
+}
 .social-button {
 	color: var(--basic-white);
 	background-color: var(--basic-blue);
 	width: 46px;
 	height: 48px;
 }
-.footer-copyright {
+.footer-copyright a {
 	line-height: 26px;
+	color: var(--basic-black);
+	text-decoration: none;
 }
 
 .filter-form {
