@@ -61,7 +61,7 @@
 }
 .welcome-banner {
 	background-color: #6691bb;
-	background: url('../img/photo-sedona.jpg');
+	background: url('../img/photo-sedona.jpg') no-repeat;
 }
 .welcome h1 {
 	font-size: 21px;
@@ -169,7 +169,7 @@
 
 .filter-form {
 	background-color: #6691bb;
-	background: url('../img/filter-background.jpg');
+	background: url('../img/filter-background.jpg') no-repeat;
 	color: var(--basic-white);
 }
 
