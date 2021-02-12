@@ -4,8 +4,8 @@
 	font-style: normal;
  	src: local("Verdana"),
     	local("Arial"),
-    	url("fonts/PTSans.woff2") format("woff2"),
-    	url("fonts/PTSans.woff") format("woff");
+    	url("../fonts/PTSans.woff2") format("woff2"),
+    	url("../fonts/PTSans.woff") format("woff");
 }
 @font-face {
   	font-family: "PT Sans Bold";
@@ -13,8 +13,8 @@
 	font-style: normal;
  	src: local("Verdana"),
     	local("Arial"),
-    	url("fonts/PTSans-Bold.woff2") format("woff2"),
-    	url("fonts/PTSans-Bold.woff") format("woff");
+    	url("../fonts/PTSans-Bold.woff2") format("woff2"),
+    	url("../fonts/PTSans-Bold.woff") format("woff");
 }
 
 :root {
