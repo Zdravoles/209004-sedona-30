@@ -1,20 +1,20 @@
 @font-face {
   	font-family: "PT Sans";
+  	src: url("../fonts/PTSans.woff2") format("woff2"),
+    	url("../fonts/PTSans.woff") format("woff"),
+    	local(Verdana),
+    	local(Arial);
    	font-weight: 400;
 	font-style: normal;
- 	src: local("Verdana"),
-    	local("Arial"),
-    	url("../fonts/PTSans.woff2") format("woff2"),
-    	url("../fonts/PTSans.woff") format("woff");
 }
 @font-face {
   	font-family: "PT Sans Bold";
    	font-weight: 700;
 	font-style: normal;
- 	src: local("Verdana"),
-    	local("Arial"),
-    	url("../fonts/PTSans-Bold.woff2") format("woff2"),
-    	url("../fonts/PTSans-Bold.woff") format("woff");
+ 	src: url("../fonts/PTSans-Bold.woff2") format("woff2"),
+    	url("../fonts/PTSans-Bold.woff") format("woff"),
+    	local(Verdana),
+    	local(Arial);
 }
 
 :root {
@@ -72,8 +72,7 @@
 .features h2 {
 	font-size: 14px;
 	line-height: 26px;
-	font-weight: bold;
-	font-family: "PT Sans Bold", Arial, sans-serif;
+	font-weight: normal;
 }
 .features-item h3 {
 	font-size: 21px;
