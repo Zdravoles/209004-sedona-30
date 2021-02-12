@@ -44,6 +44,9 @@
 	margin: 0;
 	background-color: var(--bg-body);
 }
+.page-body ul {
+	list-style: none;
+}
 .container, .main-header, .main-footer {
 	background-color: var(--basic-white);
 }
@@ -55,6 +58,9 @@
 }
 .site-navigation a:hover {
 	color: var(--a-hover);
+}
+.site-navigation .active-link {
+	color: var(--link);
 }
 .welcome-banner {
 	background-color: #6691bb;
@@ -139,6 +145,7 @@
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: 700;
+	color: var(--basic-black);
 }
 .footer-phone {
 	color: var(--basic-black);
@@ -160,6 +167,9 @@
 	background-color: #6691bb;
 	background: url('../img/filter-background.jpg') no-repeat;
 	color: var(--basic-white);
+}
+.filter-form fieldset {
+	border: none;
 }
 
 .filter-form legend {
