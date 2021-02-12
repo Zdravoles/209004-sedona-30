@@ -8,13 +8,11 @@
 	font-style: normal;
 }
 @font-face {
-  	font-family: "PT Sans Bold";
+  	font-family: "PT Sans";
    	font-weight: 700;
 	font-style: normal;
  	src: url("../fonts/PTSans-Bold.woff2") format("woff2"),
-    	url("../fonts/PTSans-Bold.woff") format("woff"),
-    	local(Verdana),
-    	local(Arial);
+    	url("../fonts/PTSans-Bold.woff") format("woff");
 }
 
 :root {
@@ -39,7 +37,7 @@
 	font-size: 14px;
 	line-height: 21px;
 	color: var(--basic-dark);
-	font-weight: normal;
+	font-weight: 400;
 	font-family: "PT Sans", Arial, sans-serif;
 	text-transform: uppercase;
 	padding: 0;
@@ -51,8 +49,7 @@
 }
 .site-navigation a {
 	line-height: 26px;
-	font-weight: bold;
-	font-family: "PT Sans Bold", Arial, sans-serif;
+	font-weight: 700;
 	color: var(--basic-black);
 	text-decoration: none;
 }
@@ -66,18 +63,16 @@
 .welcome h1 {
 	font-size: 21px;
 	line-height: 26px;
-	font-weight: bold;
-	font-family: "PT Sans Bold", Arial, sans-serif;
+	font-weight: 700;
 }
 .features h2 {
 	font-size: 14px;
 	line-height: 26px;
-	font-weight: normal;
+	font-weight: 400;
 }
 .features-item h3 {
 	font-size: 21px;
-	font-weight: bold;
-	font-family: "PT Sans Bold", Arial, sans-serif;
+	font-weight: 700;
 }
 .white-text {
 	color: var(--basic-white);
@@ -88,14 +83,12 @@
 }
 .subitem-title {
 	font-size: 21px;
-	font-weight: bold;
-	font-family: "PT Sans Bold", Arial, sans-serif;
+	font-weight: 700;
 }
 .order h2 {
 	font-size: 30px;
 	line-height: 24px;
-	font-weight: bold;
-	font-family: "PT Sans Bold", Arial, sans-serif;
+	font-weight: 700;
 }
 .order-subtitle {
 	line-height: 24px;
@@ -114,8 +107,7 @@
 	line-height: 26px;
 	background-color: var(--link);
 	color: var(--basic-white);
-	font-weight: bold;
-	font-family: "PT Sans Bold", Arial, sans-serif;
+	font-weight: 700;
 	text-decoration: none;
 	padding: 30px 125px;
 	text-align: center;
@@ -131,8 +123,7 @@
 	font-size: 21px;
 	line-height: 26px;
 	color: var(--basic-white);
-	font-weight: bold;
-	font-family: "PT Sans Bold", Arial, sans-serif;
+	font-weight: 700;
 	background-color: var(--basic-blue);
 	border: none;
 	padding: 16px 180px;
@@ -147,8 +138,7 @@
 .footer-contacts {
 	font-size: 21px;
 	line-height: 26px;
-	font-weight: bold;
-	font-family: "PT Sans Bold", Arial, sans-serif;
+	font-weight: 700;
 }
 .footer-phone {
 	color: var(--basic-black);
@@ -175,8 +165,7 @@
 .filter-form legend {
 	font-size: 16px;
 	line-height: 21px;
-	font-weight: bold;
-	font-family: "PT Sans Bold", Arial, sans-serif;
+	font-weight: 700;
 }
 .filter-form label {
 	font-size: 14px;
@@ -192,8 +181,7 @@
 .find-count {
 	font-size: 21px;
 	line-height: 26px;
-	font-weight: bold;
-	font-family: "PT Sans Bold", Arial, sans-serif;
+	font-weight: 700;
 }
 .sort-title {
 	font-size: 12px;
@@ -221,15 +209,13 @@
 .result-list .item-title {
 	font-size: 21px;
 	line-height: 26px;
-	font-weight: bold;
-	font-family: "PT Sans Bold", Arial, sans-serif;
+	font-weight: 700;
 }
 .result-list a {
 	color: var(--basic-white);
 	font-size: 14px;
 	line-height: 21px;
-	font-weight: bold;
-	font-family: "PT Sans Bold", Arial, sans-serif;
+	font-weight: 700;
 	padding: 5px 15px;
 	text-align: center;
 	text-decoration: none;
