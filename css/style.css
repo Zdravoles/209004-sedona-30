@@ -64,6 +64,9 @@ a {text-decoration: none;}
 .site-navigation .active-link {
 	color: var(--link);
 }
+.site-navigation .active-link:hover {
+	color: var(--link);
+}
 .welcome-banner {
 	background-color: #6691bb;
 	background: url('../img/photo-sedona.jpg') no-repeat;
@@ -166,8 +169,8 @@ a {text-decoration: none;}
 }
 
 .filter-form {
+	background: url('../img/filter-background.jpg');
 	background-color: #6691bb;
-	background: url('../img/filter-background.jpg') no-repeat;
 	color: var(--basic-white);
 }
 .filter-form fieldset {
