@@ -15,7 +15,9 @@
 <body class="page-body">
 <header class="main-header">
 	<nav class="main-navigation">
-		<a class="main-navigation-logo"><img src="img/logo.svg" alt="Логотип Седона" width="138" height="70"></a>
+		<a class="main-navigation-logo">
+			<img src="img/logo.svg" alt="Логотип Седона" width="138" height="70">
+		</a>
 		<ul class="site-navigation">
 			<li><a href="">Информация</a></li>
 			<li><a href="">Фото и видео</a></li>
@@ -39,45 +41,52 @@
 			<li class="features-item">
 				<div class="white-text">
 					<h3>Настоящий городок</h3>
-					<p>- №1 -</p>
-					<p>Седона не аттракцион для туристов, там течёт своя жизнь</p>
+					<p class="item-number">- №1 -</p>
+					<p class="item-description">Седона не аттракцион для туристов, там течёт своя жизнь</p>
 				</div>
-				<img src="img/blurred-photo.jpg" alt="размытое фото" width="800" height="256">
-				<div>
+				<img class="image" src="img/blurred-photo.jpg" alt="размытое фото" width="800" height="256">
+				<div class="subitem-title-box housing">
 					<p class="subitem-title">Жильё</p>
-					<p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+					<p class="item-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
 				</div>
-				<div>
+				<div class="subitem-title-box eat">
 					<p class="subitem-title">Еда</p>
-					<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+					<p class="item-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 				</div>
-				<div>
+				<div class="subitem-title-box souvenir">
 					<p class="subitem-title">Сувениры</p>
-					<p>не только китайского, но и местного производства!</p>
+					<p class="item-description">не только китайского, но и местного производства!</p>
 				</div>
 			</li>
-			<li class="features-item white-text">
+			<li class="features-item white-text white-text--v2">
 				<img src="img/devils-bridge-photo.jpg" alt="фото моста дьявола" width="800" height="256">
-				<h3>Там есть Мост Дьявола</h3>
-				<p>- №2 -</p>
-				<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+				<div>
+					<h3>Там есть Мост Дьявола</h3>
+					<p class="item-number">- №2 -</p>
+					<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+				</div>
 			</li>
 			<li class="features-item bg-gray">
 				<h3>Небольшая площадь</h3>
-				<p>- №3 -</p>
-				<p>Все достопримечательности находятся очень близко</p>
+				<p class="item-number">- №3 -</p>
+				<p class="item-description">Все достопримечательности находятся очень близко</p>
 			</li>
 			<li class="features-item bg-gray">
 				<h3>Красивая дорога</h3>
-				<p>- №4 -</p>
-				<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+				<p class="item-number">- №4 -</p>
+				<p class="item-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
 			</li>
 			<li class="features-item bg-gray">
 				<h3>Мало туристов</h3>
-				<p>- №5 -</p>
-				<p>Большинство едет в Гранд Каньон и толпится там</p>
+				<p class="item-number">- №5 -</p>
+				<p class="item-description">Большинство едет в Гранд Каньон и толпится там</p>
 			</li>
 		</ul>
+	</section>
+
+	<section class="map">
+		<h2 class="vizihid">Карта</h2>
+		<img src="img/map.jpg" alt="карта Седоны" width="1199" height="593">
 	</section>
 
 	<section class="order">
@@ -95,20 +104,15 @@
 				<input type="date" id="dateOut" name="dateOut" value="">
 			</p>
 			<p>
-				<label>Взрослые:<input type="number" name="countAdults" value="2"></label>
-				<label>Дети:<input type="number" name="countChildren" value="0"></label>
+				<label for="countAdults">Взрослые:</label><input type="number" id="countAdults" name="countAdults" value="2">
+				<label for="countChildren">Дети:</label><input type="number" id="countChildren" name="countChildren" value="0">
 			</p>
-			<button class="button" type="submit" name="btnSearch">Найти</button>
+			<button class="button m24" type="submit" name="btnSearch">Найти</button>
 		</form>
-	</section>
-
-	<section class="map">
-		<h2>Карта</h2>
-		<img src="img/map.jpg" alt="карта Седоны" width="1199" height="593">
 	</section>
 </main>
 
-<footer class="main-footer">
+<footer class="main-footer footer-mainpage">
 	<div class="footer-contacts">
 		<span>#vizitsedona</span>
 		<a class="footer-phone" href="tel:+74956660166">тел: +7(495) 666-01-66</a>
