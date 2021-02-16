@@ -71,6 +71,7 @@ body {
 	text-align: center;
     width: 138px;
     left: 530px;
+    z-index: 100;
 }
 .site-navigation {
 	display: grid;
@@ -342,6 +343,7 @@ body {
 	background: url('../img/filter-background.jpg');
 	background-color: #6691bb;
 	color: var(--basic-white);
+	padding: 0 72px;
 }
 .filter-form fieldset {
 	border: none;
@@ -454,4 +456,7 @@ body {
 }
 .form-show {
 	display: block;
+}
+.catalog-header {
+	display: none;
 }
