@@ -31,7 +31,7 @@
 		<section class="filter">
 			<h2 class="catalog-header">Фильтр подбора жилья</h2>
 			<form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
-				<fieldset>
+				<fieldset class="infrastructure">
 		        	<legend>Инфраструктура:</legend>
 		        	<ul>
 		        		<li><label><input type="checkbox" name="pool" checked>Бассейн</label></li>
@@ -39,7 +39,7 @@
 		        		<li><label><input type="checkbox" name="wifi">Wi-fi</label></li>
 		        	</ul>
 		      	</fieldset>
-		      	<fieldset>
+		      	<fieldset class="typeofhousing">
 		        	<legend>Тип жилья:</legend>
 		        	<ul>
 		        		<li><label><input type="checkbox" name="hotel" checked>Гостиница</label></li>
@@ -47,12 +47,12 @@
 		        		<li><label><input type="checkbox" name="appart" checked>Аппартаменты</label></li>
 		        	</ul>
 		      	</fieldset>
-		      	<fieldset>
+		      	<fieldset class="cost">
 		        	<legend>Стоимость в сутки (р):</legend>
-		        	<div>
-		        		<span>от 0</span><span>|</span><span>до 3000</span>
+		        	<div class="cost-range-value">
+		        		<span>от 0</span><span>до 3000</span>
 		        	</div>
-		        	<input type="range" min="0" max="3000">
+		        	<input type="range" min="0" max="3000" value="1800">
 		        	<button type="submit">Показать</button>
 		      	</fieldset>
 			</form>
@@ -60,7 +60,7 @@
 		<section class="search-result">
 			<h2>Результаты поиска</h2>
 			<p class="find-count">Найдено: <span>3</span></p>
-			<div>
+			<div class="sort-area">
 				<p class="sort-title">Сортировка:</p>
 				<ul class="sort-list">
 					<li class="sort-active"><a href="">По цене</a></li>
@@ -68,44 +68,50 @@
 					<li><a href="">По рейтингу</a></li>
 				</ul>
 			</div>
-			<div>
-				<a href=""><img src="https://via.placeholder.com/11x10" alt="стрелка вверх"></a>
-				<a href=""><img src="https://via.placeholder.com/11x10" alt="стрелка вниз"></a>
+			<div class="rate-area">
+				<a href=""><img src="img/icon-up.svg" alt="стрелка вверх"></a>
+				<a href=""><img src="img/icon-down.svg" alt="стрелка вниз"></a>
 			</div>
 
 			<ul class="result-list">
-				<li>
+				<li class="result-item">
 					<img src="img/item-amara.jpg" alt="вид на Amara Resort" width="135" height="90">
-					<div>
+					<div class="item-about">
 						<p class="item-title">Amara Resort & Spa</p>
-						<p>Гостиница</p>
+						<p class="item-type">Гостиница</p>
 						<p>от 4000 р.</p>
-						<a class="link-more" href="">Подробнее</a>
-						<a class="link-order" href="">Забронировать</a>
+						<div class="item-buttons">
+							<a class="link-more" href="">Подробнее</a>
+							<a class="link-order" href="">Забронировать</a>
+						</div>
 					</div>
-					<p class="rating">Рейтинг: 8,5</p>
+					<p class="rating rate-star4">Рейтинг: 8,5</p>
 				</li>
-				<li>
+				<li class="result-item">
 					<img src="img/item-desert.jpg" alt="вид на c Quail Inn" width="135" height="90">
-					<div>
+					<div class="item-about">
 						<p class="item-title">Desert Quail Inn</p>
-						<p>Мотель</p>
+						<p class="item-type">Мотель</p>
 						<p>от 3000 р.</p>
-						<a class="link-more" href="">Подробнее</a>
-						<a class="link-order" href="">Забронировать</a>
+						<div class="item-buttons">
+							<a class="link-more" href="">Подробнее</a>
+							<a class="link-order" href="">Забронировать</a>
+						</div>
 					</div>
-					<p class="rating">Рейтинг: 8,9</p>
+					<p class="rating rate-star3">Рейтинг: 8,9</p>
 				</li>
-				<li>
+				<li class="result-item">
 					<img src="img/item-villas.jpg" alt="вид на Villas at Poco Diablo" width="135" height="90">
-					<div>
+					<div class="item-about">
 						<p class="item-title">Villas at Poco Diablo</p>
-						<p>Апартаменты</p>
+						<p class="item-type">Апартаменты</p>
 						<p>от 2000 р.</p>
-						<a class="link-more" href="">Подробнее</a>
-						<a class="link-order" href="">Забронировать</a>
+						<div class="item-buttons">
+							<a class="link-more" href="">Подробнее</a>
+							<a class="link-order" href="">Забронировать</a>
+						</div>
 					</div>
-					<p class="rating">Рейтинг: 9,2</p>
+					<p class="rating rate-star2">Рейтинг: 9,2</p>
 				</li>
 			</ul>
 		</section>

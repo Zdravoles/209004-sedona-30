@@ -31,6 +31,7 @@
 	--link-active: #503E33;
 	--button-hover: #669EC0;
 	--button-active: #5496BD;
+	--catalog-list-border: #E5E5E5;
 }
 
 a {text-decoration: none;}
@@ -327,6 +328,13 @@ body {
 .social-button:last-child {
 	margin-right: 0;
 }
+.social-button:hover {
+	background-color: var(--button-hover);
+}
+.social-button:active {
+	background-color: var(--button-hover);
+	opacity: 0.8;
+}
 .footer-copyright a {
 	line-height: 26px;
 	color: var(--basic-black);
@@ -338,17 +346,58 @@ body {
 .footer-copyright a>img {
 	margin-left: 6px;
 }
-
+.footer-copyright a>img:hover {
+	color: var(--a-hover);
+}
 .filter-form {
 	background: url('../img/filter-background.jpg');
 	background-color: #6691bb;
 	color: var(--basic-white);
-	padding: 0 72px;
+	padding: 29px 72px;
+	display: grid;
+    grid-template-areas: "infrastructure typeofhousing . cost";
 }
 .filter-form fieldset {
 	border: none;
+	padding: 0;
+	margin: 0;
 }
-
+.filter-form input[type="checkbox"] {
+	margin-right: 15px;
+}
+.filter-form .infrastructure {
+	grid-area: infrastructure;
+}
+.filter-form li {
+	margin-top: 25px;
+}
+.filter-form .typeofhousing {
+	grid-area: typeofhousing;
+}
+.filter-form .cost {
+	grid-area: cost;
+	display: flex;
+	flex-direction: column;
+}
+.cost-range-value {
+	border: 2px solid #FFFFFF;
+    border-radius: 2px;
+    padding: 7px;
+    margin-top: 16px;
+}
+.cost-range-value>span {
+	text-align: center;
+	display: inline-block;
+	width: 50%;
+	box-sizing: border-box;
+}
+.cost-range-value>span:nth-child(1) {
+    border-right: 2px solid white;
+}
+.filter-form input[type="range"] {
+	margin: 10px 0 15px;
+	cursor: pointer;
+}
 .filter-form legend {
 	font-size: 16px;
 	line-height: 21px;
@@ -364,15 +413,19 @@ body {
 	border: 2px solid var(--basic-white);
 	background-color: transparent;
 	color: var(--basic-white);
+	padding: 8px 35px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    margin: auto;
 }
-.find-count {
-	font-size: 21px;
-	line-height: 26px;
-	font-weight: 700;
+.filter-form button:hover {
+	background-color: var(--basic-white);
+	color: var(--basic-black);
 }
 .sort-title {
 	font-size: 12px;
 	line-height: 18px;
+	padding-right: 40px;
 }
 .sort-list {
 	list-style: none;
@@ -390,31 +443,11 @@ body {
 	color: var(--basic-blue);
 	border-bottom: none;
 }
-.result-list {
-	list-style: none;
-}
-.result-list .item-title {
-	font-size: 21px;
-	line-height: 26px;
-	font-weight: 700;
-}
-.result-list a {
-	color: var(--basic-white);
-	font-size: 14px;
-	line-height: 21px;
-	font-weight: 700;
-	padding: 5px 15px;
-	text-align: center;
-	text-decoration: none;
-}
 .link-more {
 	background-color: var(--basic-blue);
 }
 .link-order {
 	background-color: var(--link);
-}
-.rating {
-	background-color: var(--form-field);
 }
 .vizihid {
 	display: none;
@@ -459,4 +492,102 @@ body {
 }
 .catalog-header {
 	display: none;
+}
+.search-result {
+	padding-top: 30px;
+	display: grid;
+	grid-template-areas: "photo about . rate";
+}
+.search-result h2 {
+	display: none;
+}
+.find-count {
+	grid-area: photo;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+	margin-left: 72px;
+}
+.sort-area {
+	grid-area: about;
+	display: flex;
+}
+.rate-area {
+	grid-area: rate;
+	text-align: right;
+	margin-right: 72px;
+}
+.rate-area>a:first-child {
+	margin-right: 10px;
+}
+.sort-list li {
+	display: inline-block;
+    margin-right: 30px;
+}
+.result-list {
+	grid-column: 1/-1;
+	margin-top: 30px;
+}
+.result-item {
+	padding: 35px 72px;
+	border-top: 1px solid var(--catalog-list-border);
+	display: flex;
+	position: relative;
+}
+.result-item:last-child {
+	border-bottom: 1px solid var(--catalog-list-border);
+}
+.result-list .item-about {
+	margin-left: 30px;
+}
+.result-list .item-about>p {
+	display: inline-block;
+}
+.result-list .item-about>p:first-child {
+	display: block;
+}
+.result-list .item-type {
+	width: 115px;
+    padding: 5px 0 14px;
+}
+.result-list .item-title {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+}
+.result-list a {
+	color: var(--basic-white);
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 700;
+	padding: 5px 15px;
+	text-align: center;
+	text-decoration: none;
+}
+.search-result h2 {
+	display: none;
+}
+.rating {
+	background-color: var(--form-field);
+	position: absolute;
+    right: 72px;
+    bottom: 35px;
+    padding: 2px 10px;
+}
+.rating:before {
+	content: '';
+	background: url(../img/star.svg);
+    height: 17px;
+    position: absolute;
+    top: -50px;
+    right: 0;
+}
+.rate-star4:before {
+	width: 76px;
+}
+.rate-star3:before {
+	width: 56px;
+}
+.rate-star2:before {
+	width: 36px;
 }
