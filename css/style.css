@@ -353,9 +353,10 @@ body {
 	background: url('../img/filter-background.jpg');
 	background-color: #6691bb;
 	color: var(--basic-white);
-	padding: 29px 72px;
+	padding: 29px 0;
 	display: grid;
     grid-template-areas: "infrastructure typeofhousing . cost";
+    grid-template-columns: 360px 250px 170px 420px;
 }
 .filter-form fieldset {
 	border: none;
@@ -367,6 +368,7 @@ body {
 }
 .filter-form .infrastructure {
 	grid-area: infrastructure;
+	margin-left: 72px;
 }
 .filter-form li {
 	margin-top: 25px;
@@ -378,6 +380,7 @@ body {
 	grid-area: cost;
 	display: flex;
 	flex-direction: column;
+	margin-right: 72px;
 }
 .cost-range-value {
 	border: 2px solid #FFFFFF;
@@ -493,29 +496,21 @@ body {
 .catalog-header {
 	display: none;
 }
-.search-result {
-	padding-top: 30px;
-	display: grid;
-	grid-template-areas: "photo about . rate";
-}
 .search-result h2 {
 	display: none;
 }
 .find-count {
-	grid-area: photo;
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: 700;
-	margin-left: 72px;
+	width: 135px;
 }
 .sort-area {
-	grid-area: about;
 	display: flex;
+	margin-left: 30px;
 }
 .rate-area {
-	grid-area: rate;
-	text-align: right;
-	margin-right: 72px;
+	margin: 0 0 0 auto;
 }
 .rate-area>a:first-child {
 	margin-right: 10px;
@@ -523,10 +518,6 @@ body {
 .sort-list li {
 	display: inline-block;
     margin-right: 30px;
-}
-.result-list {
-	grid-column: 1/-1;
-	margin-top: 30px;
 }
 .result-item {
 	padding: 35px 72px;
@@ -567,27 +558,31 @@ body {
 .search-result h2 {
 	display: none;
 }
+.star-rating-area {
+	margin: 0 0 0 auto;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
 .rating {
 	background-color: var(--form-field);
-	position: absolute;
-    right: 72px;
-    bottom: 35px;
     padding: 2px 10px;
 }
-.rating:before {
-	content: '';
+.stars {
 	background: url(../img/star.svg);
     height: 17px;
-    position: absolute;
-    top: -50px;
-    right: 0;
 }
-.rate-star4:before {
+.star4 {
 	width: 76px;
 }
-.rate-star3:before {
+.star3 {
 	width: 56px;
 }
-.rate-star2:before {
+.star2 {
 	width: 36px;
+}
+.search-result .wrapper {
+	display: flex;
+	margin: 30px 72px;
 }
