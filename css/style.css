@@ -353,10 +353,10 @@ body {
 	background: url('../img/filter-background.jpg');
 	background-color: #6691bb;
 	color: var(--basic-white);
-	padding: 29px 0;
+	padding: 29px 72px;
 	display: grid;
     grid-template-areas: "infrastructure typeofhousing . cost";
-    grid-template-columns: 360px 250px 170px 420px;
+    grid-template-columns: 288px 250px 170px 348px;
 }
 .filter-form fieldset {
 	border: none;
@@ -368,7 +368,6 @@ body {
 }
 .filter-form .infrastructure {
 	grid-area: infrastructure;
-	margin-left: 72px;
 }
 .filter-form li {
 	margin-top: 25px;
@@ -380,7 +379,6 @@ body {
 	grid-area: cost;
 	display: flex;
 	flex-direction: column;
-	margin-right: 72px;
 }
 .cost-range-value {
 	border: 2px solid #FFFFFF;
@@ -570,7 +568,6 @@ body {
     padding: 2px 10px;
 }
 .stars {
-	background: url(../img/star.svg);
     height: 17px;
 }
 .star4 {
