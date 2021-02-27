@@ -310,7 +310,7 @@ body {
 }
 .main-footer {
 	display: grid;
-	padding: 24px 72px;
+	padding: 24px 72px 36px;
 	grid-template-columns: 328px 400px 328px;
 }
 .main-footer .footer-item {
