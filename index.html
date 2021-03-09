@@ -15,7 +15,7 @@
 <body>
 <div class="page-body container">
 	<header class="main-header">
-		<nav class="main-navigation">
+		<nav class="main-navigation m-px">
 			<a class="main-navigation-logo">
 				<img src="img/logo.svg" alt="Логотип Седона" width="138" height="70">
 			</a>
@@ -87,23 +87,23 @@
 
 		<section class="order">
 			<h2>Заинтересовались?</h2>
-			<p class="order-subtitle">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+			<p class="order-subtitle">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
 			<a class="search-link" onclick="popup_form();">Поиск гостиницы в Седоне</a>
 
 			<form class="" id="popup_form" action="https://echo.htmlacademy.ru" method="post">
 				<p>
 					<label for="dateIn">Дата заезда:</label>
-					<input type="date" id="dateIn" name="dateIn" value="">
+					<input class="input-date" type="text" id="dateIn" name="dateIn" value="24 апреля 2017">
 				</p>
 				<p>
 					<label for="dateOut">Дата выезда:</label>
-					<input type="date" id="dateOut" name="dateOut" value="">
+					<input class="input-date" type="text" id="dateOut" name="dateOut" value="4 июля 2017">
 				</p>
 				<p>
-					<label for="countAdults">Взрослые:</label><input type="number" id="countAdults" name="countAdults" value="2">
-					<label for="countChildren">Дети:</label><input type="number" id="countChildren" name="countChildren" value="0">
+					<label for="countAdults">Взрослые:</label><input class="input-number" type="text" id="countAdults" name="countAdults" value="2">
+					<label for="countChildren">Дети:</label><input class="input-number" type="text" id="countChildren" name="countChildren" value="0">
 				</p>
-				<button class="button m26" type="submit" name="btnSearch">Найти</button>
+				<button class="button" type="submit" name="btnSearch">Найти</button>
 			</form>
 		</section>
 
@@ -113,7 +113,7 @@
 		</section>
 	</main>
 
-	<footer class="main-footer footer-mainpage">
+	<footer class="main-footer footer-mainpage m-px">
 		<div class="footer-item footer-contacts">
 			<span>#visitsedona</span>
 			<a class="footer-phone" href="tel:+74956660166">тел: +7(495) 666-01-66</a>
