@@ -125,17 +125,31 @@ body {
 	background: url('../img/photo-sedona.jpg') no-repeat;
 	background-size: cover;
     background-position: center;
-	height: 502px;
+	height: 509px;
 	display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+.welcome-banner img {
+	margin-bottom: 5px;
+}
+.welcome-banner:after {
+	content: "";
+	background: url('../img/mask-banner.svg') no-repeat;
+	background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 57px;
+    position: absolute;
+    bottom: 0;
 }
 .welcome h1 {
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: 700;
 	text-align: center;
-	margin: 50px auto 0;
+	margin: 43px auto 0;
     width: 470px;
     height: 80px;
 }
@@ -162,7 +176,7 @@ body {
 .features-item h3 {
 	font-size: 21px;
 	font-weight: 700;
-	width: 151px;
+	width: 150px;
 	margin: 0 auto 27px;
 }
 .item-number {
@@ -233,17 +247,17 @@ body {
     background-color: var(--basic-white);
     width: 100%;
     box-sizing: border-box;
-    padding: 42px 0 56px 55px;
+    padding: 42px 55px 56px;
 }
 .order label {
 	width: 110px;
     display: inline-block;
 }
 .order label[for="countAdults"] {
-	width: 112px;
+	width: 109px;
 }
 .order label[for="countChildren"] {
-	width: 66px;
+	width: 62px;
 	margin-left: 50px;
 }
 .order input {
@@ -262,13 +276,76 @@ body {
 	background-color: var(--form-field-focus);
 }
 .order .input-date {
-	width: 346px;
-    padding: 5px 0 6px 11px;
+	width: 344px;
+    padding: 5px 11px 6px;
+}
+.order .icon-calendar {
+	width: 21px;
+	height: 23px;
+	background: url('../img/icon-calendar.svg') no-repeat;
+	background-size: cover;
+    background-position: center;
+    border: none;
+    padding: 0;
+    position: absolute;
+    right: 9px;
+    top: 6px;
+}
+.order .icon-calendar:hover {
+	background: url('../img/icon-calendar-hover.svg') no-repeat;
+}
+.order .icon-calendar:active {
+	background: url('../img/icon-calendar-on.svg') no-repeat;
 }
 .order .input-number {
-	width: 114px;
+	width: 113px;
     padding: 6px 0;
     text-align: center;
+    position: relative;
+}
+.order .icon-minus {
+	width: 12px;
+	height: 3px;
+	background: url('../img/icon-minus.svg') no-repeat;
+	background-size: cover;
+    background-position: center;
+    border: none;
+    padding: 0;
+    position: absolute;
+    top: 18px;
+    left: 125px;
+    z-index: 10;
+}
+.order .icon-minus:hover {
+	background: url('../img/icon-minus-hover.svg') no-repeat;
+}
+.order .icon-minus:active {
+	background: url('../img/icon-minus-on.svg') no-repeat;
+}
+.order .icon-minus-right {
+	left: 358px;
+}
+.order .icon-plus {
+	width: 11px;
+	height: 11px;
+	background: url('../img/icon-plus.svg') no-repeat;
+	background-size: cover;
+    background-position: center;
+    border: none;
+    padding: 0;
+    position: absolute;
+    top: 14px;
+    left: 200px;
+	z-index: 10;
+}
+.order .icon-plus:hover {
+	background: url('../img/icon-plus-hover.svg') no-repeat;
+}
+.order .icon-plus:active {
+	background: url('../img/icon-plus-on.svg') no-repeat;
+}
+.order .icon-plus-right {
+	left: 435px;
 }
 .order form p {
 	font-size: 14px;
@@ -277,6 +354,7 @@ body {
 	text-transform: uppercase;
 	margin-bottom: 30px;
     text-align: left;
+    position: relative;
 }
 .search-link {
 	font-size: 21px;
@@ -376,16 +454,21 @@ body {
     align-items: center;
 }
 
-.footer-copyright a>img {
-	margin-left: 8px;
-	margin-bottom: 6px;
+.footer-copyright a {
+	width: 196px;
+    height: 41px;
+    background: url('../img/logo-htmlacademy.svg') no-repeat;
+    background-size: initial;
+    background-position: right;
 }
-.footer-copyright a>img:hover {
-	color: var(--a-hover);
-    margin-bottom: 4px;
+.footer-copyright a:hover {
+	background-image: url('../img/logo-htmlacademy-hover.svg');
+}
+.footer-copyright a:active {
+	background-image: url('../img/logo-htmlacademy-on.svg');
 }
 .main-footer .footer-copyright {
-    padding-top: 14px;
+    padding-top: 13px;
 }
 .filter-form {
 	background: url('../img/filter-background.jpg');

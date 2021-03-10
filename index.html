@@ -94,14 +94,22 @@
 				<p>
 					<label for="dateIn">Дата заезда:</label>
 					<input class="input-date" type="text" id="dateIn" name="dateIn" value="24 апреля 2017">
+					<button class="icon-calendar" type="button"></button>
 				</p>
 				<p>
 					<label for="dateOut">Дата выезда:</label>
 					<input class="input-date" type="text" id="dateOut" name="dateOut" value="4 июля 2017">
+					<button class="icon-calendar" type="button"></button>
 				</p>
 				<p>
-					<label for="countAdults">Взрослые:</label><input class="input-number" type="text" id="countAdults" name="countAdults" value="2">
-					<label for="countChildren">Дети:</label><input class="input-number" type="text" id="countChildren" name="countChildren" value="0">
+					<label for="countAdults">Взрослые:</label>
+					<button class="icon-minus" type="button"></button>
+					<input class="input-number" type="text" id="countAdults" name="countAdults" value="2">
+					<button class="icon-plus" type="button"></button>
+					<label for="countChildren">Дети:</label>
+					<button type="button" class="icon-minus icon-minus-right" type="button"></button>
+					<input class="input-number" type="text" id="countChildren" name="countChildren" value="0">
+					<button class="icon-plus icon-plus-right" type="button"></button>
 				</p>
 				<button class="button" type="submit" name="btnSearch">Найти</button>
 			</form>
@@ -136,7 +144,7 @@
 			</li>
 		</ul>
 		<div class="footer-item footer-copyright">
-			<a href="https://htmlacademy.ru/intensive/htmlcss">Website by <img src="img/logo-htmlacademy.svg" alt="логотип HTML Academy" width="115" height="41"></a>
+			<a href="https://htmlacademy.ru/intensive/htmlcss">Website by</a>
 		</div>
 	</footer>
 </div>
@@ -150,7 +158,7 @@ function popup_form() {
 		objFormClass.className='form-hidden';
 	}
 }
-window.onload = popup_form;
+//window.onload = popup_form;
 </script>
 </body>
 </html>
