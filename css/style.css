@@ -48,10 +48,15 @@ body {
 	background-color: var(--bg-body);
 }
 
+.page {
+	height: 100%;
+}
+
 .page-body {
 	display:grid;
 	min-height: 100%;
 	grid-template-rows: min-content 1fr min-content;
+	align-content: start;
 	position: relative;
 }
 .page-body ul {
@@ -68,7 +73,7 @@ body {
 .main-header {
 	position: relative;
 }
-.m-px {
+.main-padding {
 	padding: 0 var(--basic-padding);
 }
 .main-navigation ul {
@@ -157,7 +162,7 @@ body {
 .features-item h3 {
 	font-size: 21px;
 	font-weight: 700;
-	width: 150px;
+	width: 151px;
 	margin: 0 auto 27px;
 }
 .item-number {
