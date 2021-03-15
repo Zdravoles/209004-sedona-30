@@ -134,7 +134,7 @@ body {
 .welcome-banner img {
 	margin-bottom: 5px;
 }
-.welcome-banner:after {
+.welcome-banner::after {
 	content: "";
 	background: url('../img/mask-banner.svg') no-repeat;
 	background-size: cover;
@@ -205,7 +205,7 @@ body {
 	text-align: center;
     padding: 40px 40px 20px;
 }
-.white-text--v2>div>h3 {
+.white-text--v2 h3 {
 	margin-top: 8px;
 }
 .bg-gray {
@@ -496,7 +496,7 @@ body {
 .filter-form .typeofhousing {
 	grid-area: typeofhousing;
 }
-.filter-form .typeofhousing label {
+.typeofhousing label {
 	padding-left: 43px;
 }
 .filter-form .cost {
@@ -629,7 +629,7 @@ body {
     bottom: 6px;
     background-color: var(--basic-white);
 }
-.subitem-title-box:before {
+.subitem-title-box::before {
 	content: "";
     width: 100%;
     height: 77px;
@@ -639,17 +639,17 @@ body {
 .subitem-title-box {
 	padding: 58px 50px 0;
 }
-.housing:before {
+.housing::before {
 	background: url('../img/icon-housing.svg') no-repeat;
 	background-position: center;
     background-size: initial;
 }
-.eat:before {
+.eat::before {
 	background: url('../img/icon-eat.svg') no-repeat;
 	background-position: center;
     background-size: initial;
 }
-.souvenir:before {
+.souvenir::before {
 	background: url('../img/icon-souvenir.svg') no-repeat;
 	background-position: center;
     background-size: initial;
@@ -713,7 +713,7 @@ body {
 .result-list .item-about>p {
 	display: inline-block;
 }
-.result-list .item-about>p:first-child {
+.item-about>p:first-child {
 	display: block;
 }
 .result-list .item-type {
