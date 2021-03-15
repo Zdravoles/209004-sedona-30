@@ -248,6 +248,7 @@ body {
     width: 100%;
     box-sizing: border-box;
     padding: 42px 55px 56px;
+    z-index: 100;
 }
 .order label {
 	width: 110px;
@@ -527,6 +528,43 @@ body {
 	margin: 10px 0 27px;
 	cursor: pointer;
 }
+.range-area {
+    box-sizing: border-box;
+    margin-top: 11px;
+    margin-bottom: 23px;
+    height: 21px;
+    padding-top: 9px;
+    position: relative;
+}
+.range-area .scale {
+	height: 2px;
+	background-color: #8c8080;
+	border: 1px solid #3b3131;
+}
+.range-area .bar {
+	height: 2px;
+	background-color: var(--basic-white);
+	width: 80%;
+}
+.range-area .toggle {
+	width: 4px;
+  	height: 4px;
+  	padding: 0;
+  	border: 8px solid #ffffff;
+  	background-color: #ababab;
+  	border-radius: 50%;
+  	box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+.range-area .toggle-min {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.range-area .toggle-max {
+	position: absolute;
+	right: 43px;
+	top: 0;
+}
 .filter-form legend {
 	font-size: 16px;
 	line-height: 21px;
@@ -616,11 +654,15 @@ body {
 	margin-left: 2px;
 	padding: 4px 17px;
 }
-.vizihid {
-	display: none;
-}
 .map {
-
+	position: relative;
+}
+.map iframe {
+	width: 100%;
+	height: 593px;
+	background: url('../img/map.jpg') no-repeat;
+	background-position: center;
+    background-size: initial;
 }
 .footer-mainpage {
 	z-index: 100;

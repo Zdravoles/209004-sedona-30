@@ -34,25 +34,48 @@
 				<fieldset class="infrastructure">
 		        	<legend>Инфраструктура:</legend>
 		        	<ul>
-		        		<li><input class="visually-hidden" id="pool" type="checkbox" name="pool" checked><label for="pool">Бассейн</label></li>
-		        		<li><input class="visually-hidden" id="parking" type="checkbox" name="parking"><label for="parking">Парковка</label></li>
-		        		<li><input class="visually-hidden" id="wifi" type="checkbox" name="wifi"><label for="wifi">Wi-fi</label></li>
+		        		<li>
+		        			<input class="visually-hidden" id="pool" type="checkbox" name="pool" checked>
+		        			<label for="pool">Бассейн</label>
+		        		</li>
+		        		<li>
+		        			<input class="visually-hidden" id="parking" type="checkbox" name="parking">
+		        			<label for="parking">Парковка</label>
+		        		</li>
+		        		<li>
+		        			<input class="visually-hidden" id="wifi" type="checkbox" name="wifi">
+		        			<label for="wifi">Wi-fi</label>
+		        		</li>
 		        	</ul>
 		      	</fieldset>
 		      	<fieldset class="typeofhousing">
 		        	<legend>Тип жилья:</legend>
 		        	<ul>
-		        		<li><input class="visually-hidden" id="hotel" type="checkbox" name="hotel" checked><label for="hotel">Гостиница</label></li>
-		        		<li><input class="visually-hidden" id="motel" type="checkbox" name="motel" checked><label for="motel">Мотель</label></li>
-		        		<li><input class="visually-hidden" id="appart" type="checkbox" name="appart" checked><label for="appart">Апартаменты</label></li>
+		        		<li>
+		        			<input class="visually-hidden" id="hotel" type="checkbox" name="hotel" checked>
+		        			<label for="hotel">Гостиница</label>
+		        		</li>
+		        		<li>
+		        			<input class="visually-hidden" id="motel" type="checkbox" name="motel" checked>
+		        			<label for="motel">Мотель</label>
+		        		</li>
+		        		<li>
+		        			<input class="visually-hidden" id="appart" type="checkbox" name="appart" checked>
+		        			<label for="appart">Апартаменты</label>
+		        		</li>
 		        	</ul>
 		      	</fieldset>
 		      	<fieldset class="cost">
 		        	<legend>Стоимость в сутки (р):</legend>
-		        	<div class="cost-range-value">
-		        		<span>от 0</span><span>до 3000</span>
-		        	</div>
-		        	<input type="range" min="0" max="3000" value="2500">
+		        	<div class="cost-range-value"><span>от 0</span><span>до 3000</span></div>
+		        	<div class="range-area">
+			            <div class="scale">
+			              	<div class="bar"></div>
+			            </div>
+			            <div class="toggle toggle-min"></div>
+			            <div class="toggle toggle-max"></div>
+		          	</div>
+		        	<!--<input type="range" min="0" max="3000" value="2500">-->
 		        	<button type="submit">Показать</button>
 		      	</fieldset>
 			</form>
@@ -64,14 +87,24 @@
 				<div class="sort-area">
 					<p class="sort-title">Сортировка:</p>
 					<ul class="sort-list">
-						<li class="sort-active"><a href="">По цене</a></li>
-						<li><a href="">По типу</a></li>
-						<li><a href="">По рейтингу</a></li>
+						<li class="sort-active">
+							<a href="">По цене</a>
+						</li>
+						<li>
+							<a href="">По типу</a>
+						</li>
+						<li>
+							<a href="">По рейтингу</a>
+						</li>
 					</ul>
 				</div>
 				<div class="rate-area">
-					<a href=""><img src="img/icon-up.svg" alt="стрелка вверх"></a>
-					<a href=""><img src="img/icon-down.svg" alt="стрелка вниз"></a>
+					<a href="">
+						<img src="img/icon-up.svg" alt="стрелка вверх">
+					</a>
+					<a href="">
+						<img src="img/icon-down.svg" alt="стрелка вниз">
+					</a>
 				</div>
 			</div>
 
