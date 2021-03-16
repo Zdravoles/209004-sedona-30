@@ -179,7 +179,6 @@ body {
 .features-item h3 {
 	font-size: 21px;
 	font-weight: 700;
-	width: 150px;
 	margin: 0 auto 27px;
 }
 .item-number {
@@ -417,6 +416,9 @@ body {
     padding-bottom: 36px;
     padding-top: 23px;
 }
+.inner-footer {
+	border-top: 1px solid var(--catalog-list-border);
+}
 .main-footer .footer-item {
 	display: flex;
 	justify-content: center;
@@ -548,7 +550,7 @@ body {
 .range-area {
     box-sizing: border-box;
     margin-top: 11px;
-    margin-bottom: 23px;
+    margin-bottom: 22px;
     height: 21px;
     padding-top: 9px;
     position: relative;
@@ -576,6 +578,9 @@ body {
 .range-area .toggle:hover {
 	transform: scale(1.2);
 }
+.range-area .toggle:active {
+	outline: none;
+}
 .range-area .toggle-min {
 	position: absolute;
 	left: 0;
@@ -599,6 +604,9 @@ body {
     cursor: pointer;
     user-select: none;
     padding-left: 39px;
+}
+.typeofhousing label {
+	padding-left: 42px;
 }
 .filter-form input[type="checkbox"] + label::before {
 	content: "";
@@ -829,7 +837,7 @@ body {
 	color: rgb(0 0 0 / 30%);
 }
 .item-buttons {
-	margin-top: 5px;
+	margin-top: 4px;
 }
 .result-list a {
 	color: var(--basic-white);
@@ -852,6 +860,7 @@ body {
 .rating {
 	background-color: var(--form-field);
     padding: 2px 13px;
+    color: #666666;
 }
 .stars {
     height: 17px;
