@@ -1,7 +1,6 @@
 const objFormClass = document.getElementById('popup_form');
 const btnSearch = document.querySelector('.search-link');
 function popup_form() {
-	objFormClass.preventDefault;
 	if (objFormClass.className=='form-hidden') {
 		objFormClass.className='form-show';
 	}
