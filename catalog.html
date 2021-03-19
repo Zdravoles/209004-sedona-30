@@ -15,7 +15,9 @@
 <body>
 	<header class="main-header">
 		<nav class="main-navigation main-padding">
-			<a class="main-navigation-logo" href="index.html"><img src="img/logo.svg" alt="Логотип Седона" width="138" height="70"></a>
+			<a class="main-navigation-logo" href="index.html" aria-label="Логотип Седона">
+				<img src="img/logo.svg" alt="Логотип Седона" width="138" height="70">
+			</a>
 			<ul class="site-navigation">
 				<li><a href="">Информация</a></li>
 				<li><a href="">Фото и видео</a></li>
@@ -66,7 +68,10 @@
 		      	</fieldset>
 		      	<fieldset class="cost">
 		        	<legend>Стоимость в сутки (р):</legend>
-		        	<div class="cost-range-value"><span>от 0</span><span>до 3000</span></div>
+		        	<div class="cost-range-value">
+		        		<input type="number" placeholder="от 0" aria-label="введите минимальный порог стоимости" name="inputMinPrice" value="" min="0" max="3000" step="1">
+		        		<input type="number" placeholder="до 3000" aria-label="введите максимальный порог стоимости" name="inputMaxPrice" value="" min="0" max="3000" step="1">
+		        	</div>
 		        	<div class="range-area">
 			            <div class="scale">
 			              	<div class="bar">
@@ -184,7 +189,10 @@
 			</li>
 		</ul>
 		<div class="footer-item footer-copyright">
-			<a href="https://htmlacademy.ru/intensive/htmlcss">Website by</a>
+			<span>Website by</span>
+			<a class="link-developer" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="переход на сайт разработчика сайта HTML Academy">
+				<img src="img/logo-htmlacademy.svg" alt="логотип HTML Academy">
+			</a>
 		</div>
 	</footer>
 </body>
